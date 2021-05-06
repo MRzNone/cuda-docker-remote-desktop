@@ -27,7 +27,7 @@ RUN git clone https://github.com/neutrinolabs/pulseaudio-module-xrdp.git /pulsea
 
 
 # Build the final image
-FROM ubuntu:$TAG
+FROM mrznone98/itrip:0.1
 
 RUN apt-get update \
     && DEBIAN_FRONTEND="noninteractive" apt-get install -y --no-install-recommends \
